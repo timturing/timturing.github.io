@@ -31,6 +31,32 @@
     </div>
 
     <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+    <script>
+      function performSearch() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('search-input');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('search-results');
+        li = ul.getElementsByTagName('li');
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName('a')[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = '';
+          } else {
+            li[i].style.display = 'none';
+          }
+        }
+      }
+
+      function setupSearch() {
+        var searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', performSearch);
+      }
+
+      window.onload = setupSearch;
+    </script>
 
     {%- include scroll.html -%}
 
