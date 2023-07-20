@@ -6,7 +6,7 @@ avatar: /self.jpg
 paginate: 10
 permalink: pretty
 cover_image: /bg.jpeg
-
+markdown: kramdown # set markdown source
 # Gems
 plugins:
   - jekyll-gist
