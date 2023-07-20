@@ -15,3 +15,4 @@ defaults:
 
 # This is the first test post.
 
+测试一下中文
