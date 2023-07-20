@@ -1,9 +1,9 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
-paginate: 5
+title: Turing Tim
+description: Change is not a destination but a direction.
+url: https://github.com/xiaoluotongxuelalala
+avatar: /self.jpg
+paginate: 10
 permalink: pretty
 cover_image: /bg.jpeg
 
@@ -29,14 +29,14 @@ exclude:
 
 # Optimize Jekyl SEO Tag
 twitter:
-  username: vszhub
+  username: Wenyang LUO
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: Wenyang LUO
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://twitter.com/turing_tim
+    - https://github.com/xiaoluotongxuelalala
 google_site_verification: xxxxx
 lang: en
 
@@ -54,8 +54,7 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Wenyang LUO
+  url: https://github.com/xiaoluotongxuelalala
+  email: Tim584502139@gmail.com
 
-markdown: GFM
