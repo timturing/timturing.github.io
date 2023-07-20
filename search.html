@@ -1,0 +1,35 @@
+---
+layout: default
+title: Search Results
+---
+<div class="container">
+  <h1>Search Results</h1>
+  <input type="text" id="search-input" placeholder="Enter your search query...">
+  <ul id="search-results"></ul>
+</div>
+<script>
+  function performSearch() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('search-input');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('search-results');
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName('a')[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = '';
+      } else {
+        li[i].style.display = 'none';
+      }
+    }
+  }
+
+  function setupSearch() {
+    var searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', performSearch);
+  }
+
+  window.onload = setupSearch;
+</script>
