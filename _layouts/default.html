@@ -31,8 +31,10 @@
     </div>
 
     <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+    <!-- search bar -->
     <script>
-      function performSearch() {
+      function performSearch(event) {
+        event.preventDefault();
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById('search-input');
         filter = input.value.toUpperCase();
@@ -51,12 +53,13 @@
       }
 
       function setupSearch() {
-        var searchInput = document.getElementById('search-input');
-        searchInput.addEventListener('input', performSearch);
+        var searchForm = document.getElementById('search-form');
+        searchForm.addEventListener('submit', performSearch);
       }
 
       window.onload = setupSearch;
     </script>
+
 
     {%- include scroll.html -%}
 

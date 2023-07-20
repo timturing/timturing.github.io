@@ -52,10 +52,12 @@
     margin-left: var(--spacer);
   }
 }
-/* Example styles for the search input */
-#search-input {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  width: 150px;
+/* Example styles for the search results */
+#search-results {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#search-results li {
+  display: none;
 }
