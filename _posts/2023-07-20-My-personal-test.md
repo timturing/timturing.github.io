@@ -1,17 +1,5 @@
----
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
----
+## Test Github Emoji
+:+1: :sparkles: :camel: :tada: :rocket: :metal: 
 ## Test original things
 
 This is my first time to use Jekyll and Github Pages to build my personal blog. I will try to write some blogs about my research and life.
