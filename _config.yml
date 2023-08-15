@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Wenyang LUO"
   avatar           : "/assets/images/avator.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an optimistic and energetic undergraduate student."
+  bio              : "I am an optimistic and energetic student in Renmin University of China."
   location         : "Beijing, China."
-  email            :
+  email            : "luowenyang@ruc.edu.cn"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
