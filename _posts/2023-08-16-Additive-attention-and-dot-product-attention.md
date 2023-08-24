@@ -6,7 +6,7 @@ $f_{att}(h_i,s_j)=v_a^T\tanh(W_a[h_i;s_j])$
 
 where $v_a^T$ and $W_a$ are learned attention parameters. Here h refers to the hidden states for the encoder, and s is the hidden states for the decoder. The function above is thus a type of alignment score function. We can use a matrix of alignment scores to show the correlation between source and target words, as the Figure below.
 
-![additive-attention](../assets/images/additive-attention.png)
+![additive-attention](../assets/images/postimages/additive-attention.png)
 
 Within a neural network, once we have the alignment scores, we calculate the final scores using a [softmax](https://paperswithcode.com/method/softmax) function of these alignment scores (ensuring it sums to 1).
 
