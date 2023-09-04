@@ -33,7 +33,7 @@ actions.move_to_element(element).perform()
 ```
 
 
-## Notion ❗ 
+## Caveat ❗ 
 If there is frame in the page, we need to switch to the frame first.
 ```python
 iframe = WebDriverWait(driver, 10).until(
