@@ -1,3 +1,6 @@
+---
+permalink: /resume/
+---
  <center>
      <h1>Wenyang LUO</h1>
      <div>
