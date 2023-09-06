@@ -18,11 +18,6 @@ permalink: /resume/
              <img src="../assets/images/resumeimages/github-brands.svg" width="18px">
              <a href="https://github.com/xiaoluotongxuelalala">Github</a>
          </span>
-         ·
-         <span>
-             <img src="../assets/images/resumeimages/rss-solid.svg" width="18px">
-             <a href="https://xiaoluotongxuelalala.github.io/">My Blog</a>
-         </span>
      </div>
  </center>
 
