@@ -37,7 +37,7 @@ Then we can deactivate the virtual environment:
 conda deactivate
 ```
 
-## 3. Copy the env from yml file
+## 3. Copy an env 
 
 If you have a conda virtual environment like creating it by yourself above (or other's share), you can use this command to build a same one:
 
@@ -45,3 +45,15 @@ If you have a conda virtual environment like creating it by yourself above (or o
 conda env create -f environment.yml
 ```
 
+export the package list:
+
+```
+conda list -e > condalist.txt
+1
+```
+
+import the package list:
+
+```
+conda install --yes --file condalist.txt
+```
