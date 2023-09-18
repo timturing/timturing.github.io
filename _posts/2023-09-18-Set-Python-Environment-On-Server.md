@@ -36,3 +36,12 @@ Then we can deactivate the virtual environment:
 ```bash
 conda deactivate
 ```
+
+## 3. Copy the env from yml file
+
+If you have a conda virtual environment like creating it by yourself above (or other's share), you can use this command to build a same one:
+
+```bash
+conda env create -f environment.yml
+```
+
