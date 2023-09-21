@@ -47,13 +47,13 @@ conda env create -f environment.yml
 
 export the package list:
 
-```
+```bash
 conda list -e > condalist.txt
-1
 ```
 
 import the package list:
 
-```
+```bash
 conda install --yes --file condalist.txt
 ```
+
