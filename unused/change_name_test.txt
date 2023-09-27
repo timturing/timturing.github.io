@@ -1,1 +1,1 @@
-I've changed my github name recently, this is a test to see whether it is still ok.
+I've changed my github name recently, this is a test to see whether it is still ok. It seems that the remote repo lose the exact file?
