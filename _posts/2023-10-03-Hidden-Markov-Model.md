@@ -1,4 +1,4 @@
-关于隐马尔可夫是什么参考[here](https://blog.csdn.net/u012421852/article/details/80186703)
+关于隐马尔可夫是什么参考[here](https://blog.csdn.net/u012421852/article/details/80186703)，原文应该也是参考李航的《统计学习方法》
 
 ## 隐马尔可夫模型与马尔科夫链的区别
 
