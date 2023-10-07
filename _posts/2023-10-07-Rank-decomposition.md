@@ -10,4 +10,7 @@ Take [Lora](https://arxiv.org/abs/2106.09685) as an example, to make the model f
 These are very similar to the 1x1 convolution kernel (refer to my previous [post](https://timturing.github.io/1x1-convolution-kernel-in-deep-learning/)) and adapter tuning method. Adapter tuning incorporates small neural network modules (called adapter) into the Transformer models. To implement the adapter module, a bottleneck architecture has been proposed in, which first compresses the original feature vector into a smaller dimension (followed by a nonlinear transformation) and then recovers it to the original dimension.
 
 Like the picture I draw below, we can understand why it's a useful method. Let's say the original matrix is $A$, which has a size of $m \times n$, and we decompose it into $A = BC$, where $B$ is a $m \times k$ matrix and $C$ is a $k \times n$ matrix. If the number k is small enough, then we have $m \times k + k \times n$ parameters, which is much smaller than $m \times n$. If k is just 1, then we have $m + n$ parameters. It's a little bit like the time complexity relationship between brute-force and kmp algorithm in string matching.
-![rank-decomposition](../assets/images/postimages/rank-decomposition.jpg)
+![rank-decomposition1](../assets/images/postimages/rank-decomposition1.jpg)
+
+![rank-decomposition2](../assets/images/postimages/rank-decomposition2.jpg)
+Also, the network structure shown below indicates a lower connection between the input and output.
