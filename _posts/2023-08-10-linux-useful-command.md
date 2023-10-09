@@ -55,4 +55,4 @@ Here is a collection of most common linux commands.
 24. `man`: Display the manual pages for commands.
     - Example: `man ls`
 25. `history`: Display command history.
-    - Example: `history
+    - Example: `history`
