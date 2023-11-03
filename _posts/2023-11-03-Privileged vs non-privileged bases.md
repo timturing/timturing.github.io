@@ -1,6 +1,6 @@
 本文来源于[此链接](https://harrisonpim.com/blog/privileged-vs-non-privileged-bases-in-machine-learning)，若有侵权，请联系删除。
 
-简单理解：privileged basis是指在训练模型时，模型的输入数据中包含了一些额外的信息，这些信息可以帮助模型更好的学习到数据的特征，从而提高模型的性能。而non-privileged basis则是指模型的输入数据中不包含任何额外的信息，模型只能从输入数据中学习到数据的特征，从而提高模型的性能。这些额外的信息往往是人为指定（或者构造）而形成的，比如特定的模型架构（CNN）。
+简单理解：privileged basis是指在训练模型时，模型的输入数据中包含了一些额外的信息，这些信息可以帮助模型更好的学习到数据的特征，从而提高模型的性能。而non-privileged basis则是指模型的输入数据中不包含任何额外的信息，模型只能从输入数据中学习到数据的特征，从而提高模型的性能。这些额外的信息往往是人为指定（或者构造）而形成的，比如特定的模型架构（CNN）。然后rotation就是去旋转这些basis，看看模型的性能是否会受到影响，如果受到影响，那么这些basis就是privileged basis，反之则是non-privileged basis。
 
 ## What's a basis?
 A basis is the set of building-block vectors which we can use to represent any other vector in a particular space.
