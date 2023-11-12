@@ -6,3 +6,7 @@ Module就是单独的py file，且python xxx.py已经表明python是只能直接
 
 同样的道理，如果我们直接`import`一个module，那么实际上也是立刻去执行这个module。而为了将`import`时才需要的代码与直接运行的代码区分开，我们可以在module中加入`if __name__ == '__main__':`，这样就可以区分开了。
 
+如果我们使用from package import module的方式直接引用一个module，就会既执行package下的`__init__.py`，又执行module。如果没有`__init__.py`，就只会执行module。(默认__init__.py是空的)
+
+而Script可以理解成是一个独立的程序，一般直接运行(python xxx.py)。而module和package都是被其他程序调用的，所以它们都是library。
+
