@@ -1,4 +1,4 @@
-refer to [this post](https://www.shiksha.com/online-courses/articles/difference-between-module-and-package-in-python/#:~:text=In%20simple%20terms%2C%20a%20module,organized%20in%20a%20directory%20hierarchy.)
+python的执行是从第一行往后数的(所以import实际是在执行别的文件)，而C是有明确的入口地址的，这不一样
 
 Module就是单独的py file，且python xxx.py已经表明python是只能直接运行py file的。而package是一个目录，如果我们想要运行一个目录显然没有入口点(entry point)，所以我们需要在这个目录下创建一个`__main__.py`文件，这个文件就是入口文件，这样我们就可以通过python -m 目录了。(所以-m就是以module形式去运行的意思)。注意这里与`__init__.py`没有直接关系，即使没有照样可以运行。
 
