@@ -6,6 +6,8 @@ A better way than setting the proxy might be using the [mirror site](https://hf-
 
 In most cases (e.g. wget) you just need to change the site name `huggingface.co` to `hf-mirror.com`, refer to it for details.
 
+The recommended way (what I'm using right now) is to set the `HF_ENDPOINT` environment variable in the `~/.bashrc`file. Just add `export HF_ENDPOINT=https://hf-mirror.com` at the end.
+
 ## 1. Set proxy and cache
 As we all know, the huggingface is a foreign website, so we need to set proxy to access it. Besides, for a local machine, we need to set cache to save the downloaded models and datasets. Unfortunately, the huggingface doesn't support setting proxy, and its default cache path is in the C disk directory in Windows. So we need to set proxy and cache manually.
 ```python
