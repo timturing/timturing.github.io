@@ -57,3 +57,18 @@ import the package list:
 conda install --yes --file condalist.txt
 ```
 
+
+
+## 4. Delete an env
+
+If you want to remove a existing environment, you can use:
+
+```bash
+conda remove -n ENV_NAME --all
+```
+
+
+
+## 5. Download the package
+
+After you've set the conda environment, the next step is finding the correct packages that match (Though normally the latest is OK for other usage, in AI area, it pertains to other things e.x. CUDA). For example, If you wanna download `torch` correctly, you can check https://pytorch.org/get-started/previous-versions/ and you can always find other package dependency problems in other packages. Keep in mind that **download the highest package first**, e.g. vLLM, as it has specific requirements for some lower packages e.g. torch==2.1.2.
