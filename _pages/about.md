@@ -1,5 +1,7 @@
 ---
 permalink: /about/
+title: "About"
+author_profile: true
 ---
 <!-- Show an image -->
 ![ai box logo](../assets/images/ai-box-logo.png)
